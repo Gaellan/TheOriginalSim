@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv, char **envp)
 {
-    std::list<Tile> tilemap;
+    std::list<Tile*> tilemap;
     Map map(5, 2);
     map.display();
 

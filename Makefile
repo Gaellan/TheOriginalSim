@@ -13,7 +13,10 @@ NAME = original_sim
 
 SRCS = src/main.cpp \
 	src/Map/Map.cpp \
-	src/Map/Tile.cpp
+	src/Map/Tile.cpp \
+	src/Resource/Resource.cpp \
+	src/Resource/Food.cpp \
+	src/Resource/Water.cpp
 
 OBJS = $(SRCS: .cpp=.o)
 

@@ -28,3 +28,11 @@ int Tile::getPosY() {
 void Tile::setPosY(int pos_y) {
     this->position_y = pos_y;
 }
+
+std::list<Resource*> Tile::getResources() {
+    return this->resources;
+}
+
+void Tile::setResources(std::list <Resource*> list) {
+    this->resources = list;
+}

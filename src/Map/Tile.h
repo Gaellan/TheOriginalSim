@@ -5,11 +5,15 @@
 #ifndef THEORIGINALSIM_TILE_H
 #define THEORIGINALSIM_TILE_H
 
+#include <list>
+#include "../Resource/Resource.h"
+
 class Tile {
     private :
 
         int position_x;
         int position_y;
+        std::list<Resource*> resources;
 
     public :
 
@@ -20,6 +24,8 @@ class Tile {
         void setPosX(int pos_x);
         int getPosY();
         void setPosY(int pos_y);
+        std::list<Resource*> getResources();
+        void setResources(std::list<Resource*> list);
 };
 
 #endif //THEORIGINALSIM_TILE_H

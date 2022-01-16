@@ -15,15 +15,15 @@ class Map {
 
     int size_x;
     int size_y;
-    std::list<Tile> map;
+    std::list<Tile*> map;
 
     public:
 
     Map(int size_x, int size_y);
     ~ Map();
 
-    std::list<Tile> getMap();
-    void setMap(std::list<Tile> map);
+    std::list<Tile*> getMap();
+    void setMap(std::list<Tile*> map);
     int getSizeX();
     int getSizeY();
 
