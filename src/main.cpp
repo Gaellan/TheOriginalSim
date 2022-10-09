@@ -2,7 +2,6 @@
 ** Created by Gaëllan Sifflepignon on 15/01/2022.
 */
 
-#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <cstdlib>
 #include "Map/Map.h"

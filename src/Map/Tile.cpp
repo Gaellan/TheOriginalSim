@@ -7,6 +7,7 @@
 Tile::Tile(int pos_x, int pos_y) {
     this->setPosX(pos_x);
     this->setPosY(pos_y);
+    this->state = EMPTY;
 }
 
 Tile::~Tile() {
@@ -35,4 +36,12 @@ std::list<Resource*> Tile::getResources() {
 
 void Tile::setResources(std::list <Resource*> list) {
     this->resources = list;
+}
+
+TileState Tile::getState() {
+    return this->state;
+}
+
+void Tile::setState(TileState state) {
+    this->state = state;
 }
